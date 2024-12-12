@@ -1,3 +1,6 @@
+/* Bootstrap import */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 #root {
   max-width: 1280px;
   padding: 5rem 2rem 2rem 2rem;
@@ -40,9 +43,6 @@
 .read-the-docs {
   color: #888;
 }
-
-/* Bootstrap import */
-@import 'bootstrap/dist/css/bootstrap.min.css';
 
 .articles-list {
   display: flex;
