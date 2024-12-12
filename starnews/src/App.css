@@ -1,0 +1,239 @@
+#root {
+  max-width: 1280px;
+  padding: 5rem 2rem 2rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Bootstrap import */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #15202b !important;
+  border-bottom: 1px solid #38444d;
+}
+
+.nav-logo {
+  color: white !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #15202b;
+  border: 1px solid #38444d;
+  color: white;
+}
+
+.card:hover {
+  background-color: #1c2732;
+}
+
+body {
+  background-color: #fafafa;
+  color: #262626;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  color: #262626;
+}
+
+.btn-outline-secondary {
+  color: white;
+  border-color: #38444d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #1c2732;
+  border-color: #38444d;
+}
+
+/* Stili Navbar */
+.navbar-custom {
+  background-color: white !important;
+  border-bottom: 1px solid #dbdbdb;
+  height: 60px;
+  transition: background-color 0.3s;
+}
+
+.brand-custom {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #262626 !important;
+}
+
+.nav-link-custom {
+  color: rgba(0, 0, 0, 0.7) !important;
+  margin: 0 0.5rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: #262626 !important;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+main {
+  min-height: calc(100vh - 140px);
+  padding-top: 60px;
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+.news-card {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 24px;
+  transition: none;
+}
+
+.news-card:hover {
+  transform: none;
+}
+
+.news-card .card-img-top {
+  border-radius: 0;
+}
+
+.news-card .card-body {
+  padding: 12px 16px;
+}
+
+.news-card .card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.news-card .card-text {
+  font-size: 14px;
+  color: #262626;
+}
+
+.article-container {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+@media (min-width: 736px) {
+  .article-container {
+    display: grid;
+    grid-template-columns: 1fr 335px;
+    min-height: 450px;
+  }
+
+  .article-image-container {
+    border-right: 1px solid #dbdbdb;
+  }
+}
+
+.search-container {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+.search-input {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.loading-spinner {
+  padding: 20px;
+  text-align: center;
+  color: #8e8e8e;
+}
+
+.end-message {
+  text-align: center;
+  color: #8e8e8e;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.navbar-custom.scrolled {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.25em 0.6em;
+  border-radius: 1rem;
+}
